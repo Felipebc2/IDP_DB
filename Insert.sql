@@ -49,7 +49,7 @@ UPDATE Brawlers SET maestry_id = 1 WHERE id = 15; -- Corvo
 UPDATE Brawlers SET maestry_id = 1 WHERE id = 16; -- Leon;
 
 INSERT INTO Brawlers (name, class, description, level, trophys, moveSpeed, rarity_id, maestry_id, rank_id) VALUES
-('Shelly', 'Lutadora', 'Uma brawler versátil com ataque de longo alcance.', 1, 0, 'Média', 1, 1, 1), -- maestria: Madeira, rank: Bronze
+('Shelly', 'Lutadora', 'Uma brawler versátil com ataque de curto alcance.', 1, 0, 'Média', 1, 1, 1), -- maestria: Madeira, rank: Bronze
 ('El Primo', 'Peso Pesado', 'Um lutador corpo a corpo com alta saúde.', 1, 0, 'Rápida', 2, 1, 1), -- maestria: Madeira, rank: Bronze
 ('Nita', 'Lutadora', 'Invoca um urso para ajudar nas batalhas.', 1, 0, 'Média', 2, 1, 1), -- maestria: Madeira, rank: Bronze
 ('Colt', 'Atirador', 'Dispara uma rajada de balas com alta precisão.', 1, 0, 'Rápida', 2, 1, 1), -- maestria: Madeira, rank: Bronze
