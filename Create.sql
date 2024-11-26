@@ -1,4 +1,4 @@
--- DROP DATABASE IF EXISTS BrawlStarsDB;
+DROP DATABASE IF EXISTS BrawlStarsDB;
 
 CREATE DATABASE IF NOT EXISTS BrawlStarsDB;
 USE BrawlStarsDB;
@@ -198,4 +198,3 @@ CREATE TABLE IF NOT EXISTS Attack (
     skills_id INT NOT NULL,
     FOREIGN KEY (skills_id) REFERENCES Skills(id)
 );
-

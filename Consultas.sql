@@ -16,7 +16,10 @@ JOIN
     Maestry m ON b.maestry_id = m.id
 JOIN 
     Ranks rk ON b.rank_id = rk.id;
-    
+
+SELECT * FROM Rarity;
+SELECT * FROM Maestry;
+SELECT * FROM Ranks;
 
 -- Conta quantos brawlers existem por raridade
 SELECT 
@@ -46,18 +49,19 @@ LIMIT 5;
 SELECT 
     b.name AS Brawler, 
     s.id AS SkillID, 
-    sp.super_name AS Super, 
-    sp.super_damage AS Dano_Super, 
     a.attack_name AS Ataque, 
-    a.attack_damage AS Dano_Ataque
+    a.attack_damage AS Dano_Ataque,
+    sp.super_name AS Super,
+    sp.super_damage AS Dano_Super
 FROM 
     Brawlers b
 JOIN 
     Skills s ON b.id = s.brawler_id
 JOIN 
-    Super sp ON s.id = sp.skills_id
+    Attack a ON s.id = a.skills_id
 JOIN 
-    Attack a ON s.id = a.skills_id;
+    Super sp ON s.id = sp.skills_id
+ORDER BY  b.id;
 
 -- Lista as recompensas de maestria por tier
 SELECT 
